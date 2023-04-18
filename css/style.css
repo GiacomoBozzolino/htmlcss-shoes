@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -28,7 +32,6 @@ li{
 
 header{
     height: 100px;
-  
     width: 100%;
     text-align: right;
     display: flex;
@@ -37,17 +40,19 @@ header{
     position: fixed;
     left: 0;
     top: 0;
+    z-index: 100;
 }
 
 /* CLASSI MAIN */
 
-.box-1, .box-2, .box-3 {
+ .box-1, .box-2, .box-3 {
     height: 100vh;
     width: 100%;
-}
+} 
 
 .box-1{
     background-color: red;
+    position: relative;
 }
 .box-2{
     background-color: green;
@@ -56,3 +61,16 @@ header{
     background-color: yellow;
 }
 
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 800;
+    margin: 0 30px;
+}
